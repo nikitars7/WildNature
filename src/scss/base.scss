@@ -62,3 +62,23 @@
       padding-left: 10px;
    }
    }
+
+   //beautiful hover text decoration underline
+
+   // &::before{
+   //    content:'';
+   //    background-color:$hfcolor;
+   //    bottom: 0;
+   //    height: 2px;
+   //    left: 50%;
+   //    position: absolute;
+   //    transition: left .2s ease,width .2s ease;
+   //    width: 0;
+   //  }
+   //  @media (any-hover:hover){
+   //    &:hover{
+   //      &::before{
+   //        width: 100%;
+   //        left: 0;
+   //      }
+   //  }}

@@ -1,0 +1,205 @@
+.footer {
+   position: relative;
+   background-color: $mainColor;
+   &::before,
+   &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: toRem(174);
+      pointer-events: none;
+   }
+   &::before {
+      content: "";
+      left: 0;
+      bottom: 0;
+      background: url("../img/footer/footer-decor.svg") left bottom / 100% no-repeat;
+   }
+   &::after {
+      content: "";
+      right: 0;
+      top: 0;
+      transform: rotate(-180deg);
+      background: url("../img/footer/footer-decor.svg") left bottom / 100% no-repeat;
+   }
+   &__container {
+   }
+
+   &__body {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      @include adaptiv-value("padding-top", 92, 40, 1);
+      @include adaptiv-value("padding-bottom", 45, 30, 1);
+      border-bottom: 1px solid $hfcolor;
+      @media (max-width:$tablet){
+         grid-template-columns: repeat(2,1fr);
+      }
+      @media (max-width:$mobile){
+         grid-template-columns: auto;
+      }
+   }
+
+   &__column {
+   }
+
+   &__content {
+      @include adaptiv-value('padding-right',40,15,1);
+      @media (max-width:$tablet){
+         order:2;
+      }
+      @media (min-width:$tablet){
+         border-right: toRem(1) solid $hfcolor;
+      }
+      @media (max-width:$mobile){
+         order:3;
+      }
+   }
+   &__logo {
+      @include adaptiv-value("width", 287, 110, 1);
+      justify-self: center;
+      align-self: center;
+      @media (max-width:$tablet){
+         order:1;
+         grid-column: span 2;
+         &:not(:last-child){margin-bottom:toRem(30);}
+      }
+      @media (max-width:$mobile){
+         grid-column: span 1;
+      }
+   }
+   &__menu {
+   }
+
+   &__social {
+   }
+
+   &__subscribe {
+      @media (max-width:$tablet){
+         order:3;
+      }
+      @media (max-width:$mobile){
+         order:2;
+      }
+      @media (min-width:$mobile){
+         border-left: toRem(1) solid $hfcolor;
+      }
+   }
+
+   &__copyright {
+      @include adaptiv-value("padding-top", 42, 15, 1);
+      @include adaptiv-value("padding-bottom", 42, 15, 1);
+      line-height: 187.5%; /* 30/16 */
+      color: $hfcolor;
+      text-align: center;
+   }
+}
+.menu-footer {
+   &:not(:last-child) {
+      margin-bottom: toRem(39);
+   }
+   &__title {
+      font-family: 'Italiana';
+      color: $hfcolor;
+      text-transform: capitalize;
+      font-size: toRem(20);
+      &:not(:last-child) {
+         margin-bottom: toRem(15);
+      }
+   }
+
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      @include adaptiv-value("column-gap", 41, 15, 1);
+      row-gap: toRem(3);
+   }
+
+   &__item {
+      position: relative;
+      &::before{
+         content:'';
+         background-color:$hfcolor;
+         bottom: 0;
+         height: 2px;
+         left: 50%;
+         position: absolute;
+         transition: left .2s ease,width .2s ease;
+         width: 0;
+       }
+       @media (any-hover:hover){
+         &:hover{
+           &::before{
+             width: 100%;
+             left: 0;
+           }
+       }}
+   }
+
+   &__link {
+      color: $hfcolor;
+      font-weight: 300;
+      line-height: 156.25%; /* 25/16 */
+   }
+}
+.social {
+   display: flex;
+   flex-wrap: wrap;
+   @include adaptiv-value('column-gap',41,15,1);
+   &__image {
+      color: $hfcolor;
+      font-size: toRem(24);
+      transition: color 0.3s ease 0s;
+      @media (any-hover:hover){&:hover{color:#fff;}}
+   }
+}
+
+.subscribe {
+   &__body{
+     @media (min-width:$mobile){
+      max-width: toRem(350);
+     }
+   }
+   @media (min-width:$mobile){
+      display: grid;
+      justify-items: end;
+      @include adaptiv-value('padding-left',40,15,1);
+     }
+     @media (max-width:$mobile){
+      @include adaptiv-value('margin-bottom',40,15,1);
+     }
+   color:$hfcolor;
+   &__title {
+      font-family: 'Italiana';
+      @include adaptiv-value('font-size',28,24,1);
+      text-transform: capitalize;
+      line-height: 120%;
+      &:not(:last-child){margin-bottom:toRem(25);}
+   }
+
+   &__form {
+      display: flex;
+      border-bottom: 1px solid rgba(194, 172, 132, 0.2)
+   }
+
+   &__input {
+      flex: 1 1 auto;
+      line-height: 187.5%; /* 30/16 */
+      background-color:transparent;
+      color:$hfcolor;
+      &::placeholder{
+         color:$hfcolor;
+      }
+      &:focus::placeholder{
+         color: transparent;
+        }
+
+   }
+
+   &__button {
+      line-height: 187.5%; /* 30/16 */
+      color:$hfcolor;
+      background-color: $mainColor;
+      transition: color 0.3s ease 0s;
+      @media (any-hover:hover){&:hover{color:#fff;}}
+   }
+}

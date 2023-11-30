@@ -1,10 +1,3 @@
-@import 'nullstyle.scss';
-@import 'fonts.scss';
-@import 'iconsFont.scss';
-@import 'mixins.scss';
-@import 'ibg.scss';
-@import 'base.scss';
-
 $fontFamily: 'Montserrat';
 //
 $mainColor:#222220;
@@ -20,6 +13,16 @@ $containerWidth:1570px;
 $tablet: 991.98px;
 $mobile:767.98px;
 $mobileSmall:479.98px;
+@import 'nullstyle.scss';
+@import 'fonts.scss';
+@import 'iconsFont.scss';
+@import 'mixins.scss';
+@import 'ibg.scss';
+@import 'base.scss';
+@import 'button.scss';
+@import './header/header.scss';
+@import './footer/footer.scss';
+@import 'common.scss';
 
 
 body{
@@ -52,5 +55,3 @@ main{
    padding-right: 15px;
    margin: 0 auto;
 }
-
-@import 'header.scss';
