@@ -1,22 +1,23 @@
-// import Swiper from "swiper";
-// import {Navigation,Pagination} from 'swiper/modules';
+import Swiper from "swiper";
+import {Navigation} from 'swiper/modules';
 export const swiper = () => {
-  if (document.querySelector('.reviews__slider')) {
-    new Swiper('.reviews__slider', {
-      modules: [Navigation, Pagination],
+  if (document.querySelector('.hero__slider')) {
+    new Swiper('.hero__slider', {
+      modules: [Navigation],
       observer: true,
       observeParents: true,
       slidesPerView: 1,
       spaceBetween: 0,
-      autoHeight: true,
+      centeredSlides:true,
+      // autoHeight: true,
       speed: 800,
-      pagination: {
-        el: '.reviews__bullets',
-        clickable: true,
-      },
+      // pagination: {
+      //   el: '.reviews__bullets',
+      //   clickable: true,
+      // },
       navigation: {
-        prevEl: '.reviews__arrow--left',
-        nextEl: '.reviews__arrow--right',
+        prevEl: '.hero__arrow--left',
+        nextEl: '.hero__arrow--right',
       },
     })
   }

@@ -4,7 +4,59 @@
   <body>
     <div class="wrapper">
       @@include('html/header.html',{})
-      <main class="page"></main>
+      <main class="page">
+        <section class="hero">
+          <div class="hero__container">
+            <div class="hero__content">
+              <h1 class="hero__title">A better world for pets</h1>
+              <a href="#" class="hero__button button button--border"
+                ><span>Explore</span></a
+              >
+            </div>
+            <div class="hero__slider swiper">
+              <div class="hero__wrapper swiper-wrapper">
+                <div class="hero__slide slide-hero swiper-slide">
+                  <div class="slide-hero__body">
+                    <img src="@img/hero/pet.png" alt="sliderimg" class="slide-hero__image">
+                  </div>
+                  <div class="slide-hero__top-image">
+                    <img src="@img/hero/pet.png" alt="sliderimg">
+                  </div>
+                </div>
+                <div class="hero__slide slide-hero swiper-slide">
+                  <div class="slide-hero__body">
+                    <img src="@img/hero/pet.png" alt="sliderimg" class="slide-hero__image">
+                  </div>
+                  <div class="slide-hero__top-image">
+                    <img src="@img/hero/pet.png" alt="sliderimg">
+                  </div>
+                </div>
+                <div class="hero__slide slide-hero swiper-slide">
+                  <div class="slide-hero__body">
+                    <img src="@img/hero/pet.png" alt="sliderimg" class="slide-hero__image">
+                  </div>
+                  <div class="slide-hero__top-image">
+                    <img src="@img/hero/pet.png" alt="sliderimg">
+                  </div>
+                </div>
+                <div class="hero__slide slide-hero swiper-slide">
+                  <div class="slide-hero__body">
+                    <img src="@img/hero/pet.png" alt="sliderimg" class="slide-hero__image">
+                  </div>
+                  <div class="slide-hero__top-image">
+                    <img src="@img/hero/pet.png" alt="sliderimg">
+                  </div>
+                </div>
+              </div>
+              <div class="hero__controll">
+                <button class="hero__arrow hero__arrow--left _icon-arrow"></button>
+                <button class="hero__arrow hero__arrow--right _icon-arrow"></button>
+              </div>
+            </div>
+          </div>
+          <img class="hero__bg" src="@img/hero/hero-bg.jpg" alt="herobg">
+        </section>
+      </main>
       @@include('html/footer.html',{})
     </div>
     <script src="js/app.min.js"></script>
