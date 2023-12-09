@@ -1,6 +1,6 @@
 const sections = document.querySelectorAll("section[id]");
 const links = document.querySelectorAll('a[href*="#"]');
-const titles = document.querySelectorAll(".block-header__title");
+const titles = document.querySelectorAll(".block-header");
 export const sectionInterObserver = () => {
   const callBack = (entries) => {
     entries.forEach((entry) => {

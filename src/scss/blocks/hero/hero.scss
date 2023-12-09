@@ -8,16 +8,25 @@
       padding-bottom: toRem(50);
       position: relative;
       display: grid;
+      gap:toRem(30);
       grid-template-columns: 1fr 40% 1fr;
       align-items: center;
       z-index: 2;
       flex-grow: 1;
+      @media (max-width:$mobile){
+         grid-template-columns: 1fr 1fr;
+      }
    }
 
    &__content {
       margin-right: -47.2477%;
       position: relative;
-      z-index: 2;
+      z-index: 3;
+      @media (max-width:$mobile){
+         margin-right: 0;
+         grid-column: 1/3;
+         text-align: center;
+      }
    }
 
    &__title {
@@ -34,6 +43,12 @@
    }
 
    &__slider.swiper {
+      padding-top: toRem(50);
+      padding-bottom: toRem(50);
+      z-index: 2;
+      @media (max-width:$mobile){
+         grid-column: 1/3;
+      }
    }
 
    &__wrapper {
@@ -43,15 +58,50 @@
    }
 
    &__controll {
+      position: absolute;
+      bottom: toRem(30);
+      right: toRem(15);
+      display: flex;
+      gap:toRem(30);
+      @media (max-width:$mobile){
+        justify-content: center;
+        padding-top: toRem(50);
+        position: static;
+      }
    }
 
    &__arrow {
+      color:$hfcolor;
+      font-size: toRem(16);
+      background-color: transparent;
+      transition: transform 1.3s;
    }
 
    &__arrow--left {
+      transform: rotate(-180deg);
+      @media (any-hover:hover){&:hover{
+         transform: rotate(-180deg) scale(1.3);
+      }}
    }
 
    &__arrow--right {
+      @media (any-hover:hover){&:hover{
+         transform: scale(1.3);
+      }}
+   }
+   &__mini{
+      overflow: hidden;
+      padding-top: toRem(30);
+      padding-bottom: toRem(30);
+      transform: translate(0,-30%);
+    @media (max-width:$tablet){
+      transform: translate(0,-10%);
+    }
+   }
+   &__mini-slider {
+      @media (max-width:$mobile){
+         display: none;
+      }
    }
 
    &__bg {
@@ -96,5 +146,22 @@
       img{
          max-width: 100%;
       }
+   }
+   &--mini{
+      flex: 0 0 auto;
+      padding: toRem(3);
+   }
+}
+
+
+.mini-slider {
+overflow: visible;
+transform: translate(-117px,0);
+width: toRem(117);
+   &__wrapper {
+   }
+
+   &__slide {
+      cursor: pointer;
    }
 }

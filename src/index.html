@@ -5,7 +5,7 @@
     <div class="wrapper">
       @@include('html/header.html',{})
       <main class="page">
-        <section class="hero">
+        <section id="home" class="hero">
           <div class="hero__container">
             <div class="hero__content">
               <h1 class="hero__title">A better world for pets</h1>
@@ -17,44 +17,399 @@
               <div class="hero__wrapper swiper-wrapper">
                 <div class="hero__slide slide-hero swiper-slide">
                   <div class="slide-hero__body">
-                    <img src="@img/hero/pet.png" alt="sliderimg" class="slide-hero__image">
-                  </div>
-                  <div class="slide-hero__top-image">
-                    <img src="@img/hero/pet.png" alt="sliderimg">
-                  </div>
-                </div>
-                <div class="hero__slide slide-hero swiper-slide">
-                  <div class="slide-hero__body">
-                    <img src="@img/hero/pet.png" alt="sliderimg" class="slide-hero__image">
-                  </div>
-                  <div class="slide-hero__top-image">
-                    <img src="@img/hero/pet.png" alt="sliderimg">
+                    <img
+                      src="@img/hero/pet.png"
+                      alt="sliderimg"
+                      class="slide-hero__image"
+                    />
                   </div>
                 </div>
                 <div class="hero__slide slide-hero swiper-slide">
                   <div class="slide-hero__body">
-                    <img src="@img/hero/pet.png" alt="sliderimg" class="slide-hero__image">
-                  </div>
-                  <div class="slide-hero__top-image">
-                    <img src="@img/hero/pet.png" alt="sliderimg">
+                    <img
+                      src="@img/hero/pet.png"
+                      alt="sliderimg"
+                      class="slide-hero__image"
+                    />
                   </div>
                 </div>
                 <div class="hero__slide slide-hero swiper-slide">
                   <div class="slide-hero__body">
-                    <img src="@img/hero/pet.png" alt="sliderimg" class="slide-hero__image">
+                    <img
+                      src="@img/hero/pet.png"
+                      alt="sliderimg"
+                      class="slide-hero__image"
+                    />
                   </div>
-                  <div class="slide-hero__top-image">
-                    <img src="@img/hero/pet.png" alt="sliderimg">
+                </div>
+                <div class="hero__slide slide-hero swiper-slide">
+                  <div class="slide-hero__body">
+                    <img
+                      src="@img/hero/pet.png"
+                      alt="sliderimg"
+                      class="slide-hero__image"
+                    />
                   </div>
                 </div>
               </div>
               <div class="hero__controll">
-                <button class="hero__arrow hero__arrow--left _icon-arrow"></button>
-                <button class="hero__arrow hero__arrow--right _icon-arrow"></button>
+                <button
+                  class="hero__arrow hero__arrow--left _icon-arrow"
+                ></button>
+                <button
+                  class="hero__arrow hero__arrow--right _icon-arrow"
+                ></button>
+              </div>
+            </div>
+            <div class="hero__mini">
+              <div class="hero__mini-slider mini-slider swiper">
+                <div class="mini-slider__wrapper swiper-wrapper">
+                  <div
+                    class="mini-slider__slide slide-hero slide-hero--mini swiper-slide"
+                  >
+                    <div class="slide-hero__body">
+                      <img
+                        src="@img/hero/pet.png"
+                        alt="sliderimg"
+                        class="slide-hero__image"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="mini-slider__slide slide-hero slide-hero--mini swiper-slide"
+                  >
+                    <div class="slide-hero__body">
+                      <img
+                        src="@img/hero/pet.png"
+                        alt="sliderimg"
+                        class="slide-hero__image"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="mini-slider__slide slide-hero slide-hero--mini swiper-slide"
+                  >
+                    <div class="slide-hero__body">
+                      <img
+                        src="@img/hero/pet.png"
+                        alt="sliderimg"
+                        class="slide-hero__image"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="mini-slider__slide slide-hero slide-hero--mini swiper-slide"
+                  >
+                    <div class="slide-hero__body">
+                      <img
+                        src="@img/hero/pet.png"
+                        alt="sliderimg"
+                        class="slide-hero__image"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <img class="hero__bg" src="@img/hero/hero-bg.jpg" alt="herobg">
+          <img class="hero__bg" src="@img/hero/hero-bg.jpg" alt="herobg" />
+        </section>
+        <section id="about" class="treatment">
+          <div class="treatment__container">
+             <div class="treatment__content content-treatment">
+              <div class="content-treatment__image">
+                <img src="@img/treatment/dog.jpg" alt="dog">
+              </div>
+                <div class="content-treatment__block block-header">
+                  <div class="block-header__label">About us</div>
+                  <h2 class="block-header__title">Treating pet like Royalty</h2>
+                  <div class="block-header__text">
+                    <blockquote>“They’re not just pets, they’re family”</blockquote>
+                   <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam
+                      mi id augue ultrices, in tempus elit tristique. Aliquam ultrices sem
+                      non.
+                   </p>
+                  </div>
+                  <a href="" class="block-header__button button"><span>Explore</span></a>
+                </div>
+             </div>
+             <div class="treatment__services services-treatment">
+                <div class="services-treatment__item">
+                   <div class="services-treatment__image">
+                    <img src="@img/treatment/food.svg" alt="food">
+                   </div>
+                   <div class="services-treatment__text">Pet food</div>
+                </div>
+                <div class="services-treatment__item">
+                  <div class="services-treatment__image">
+                   <img src="@img/treatment/care.svg" alt="food">
+                  </div>
+                  <div class="services-treatment__text">Pet care</div>
+               </div>
+               <div class="services-treatment__item">
+                <div class="services-treatment__image">
+                 <img src="@img/treatment/accesories.svg" alt="food">
+                </div>
+                <div class="services-treatment__text">Pet accessories</div>
+             </div>
+               </ul>
+             </div>
+          </div>
+        </section>
+        <section id="products" class="products">
+          <div class="products__container">
+            <div class="products__block block-header">
+              <div class="block-header__label">Our Products</div>
+              <h2 class="block-header__title">For all your pet needs</h2>
+              <div class="block-header__text">
+               <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in tempus elit.
+               </p>
+              </div>
+            </div>
+            <div class="products__content">
+              <div class="products__item item-product">
+                <div class="item-product__image ibg">
+                  <img src="@img/products/bear.png" alt="bg">
+                </div>
+                <div class="item-product__body">
+                  <div class="item-product__name">Luxury pet bed</div>
+                  <div class="item-product__price">$120</div>
+                </div>
+                <div class="rating rating__set">
+                  <div class="rating__body">
+                  <div class="rating__active"></div>
+                   <div class="rating__items">
+                <input type="radio" class="rating__item" value="1" name="rating">
+                <input type="radio" class="rating__item" value="2" name="rating">
+                <input type="radio" class="rating__item" value="3" name="rating">
+                <input type="radio" class="rating__item" value="4" name="rating">
+                <input type="radio" class="rating__item" value="5" name="rating">
+                </div>
+                </div>
+                <div class="rating__value">3.6</div>
+                </div>
+              </div>
+              <div class="products__item item-product">
+                <div class="item-product__image ibg">
+                  <img src="@img/products/cfood.png" alt="bear">
+                </div>
+                <div class="item-product__body">
+                  <div class="item-product__name">Cat Food</div>
+                  <div class="item-product__price">$20</div>
+                </div>
+                <div class="rating rating__set">
+                  <div class="rating__body">
+                  <div class="rating__active"></div>
+                   <div class="rating__items">
+                <input type="radio" class="rating__item" value="1" name="rating">
+                <input type="radio" class="rating__item" value="2" name="rating">
+                <input type="radio" class="rating__item" value="3" name="rating">
+                <input type="radio" class="rating__item" value="4" name="rating">
+                <input type="radio" class="rating__item" value="5" name="rating">
+                </div>
+                </div>
+                <div class="rating__value">3.6</div>
+                </div>
+              </div>
+              <div class="products__item item-product">
+                <div class="item-product__image ibg">
+                  <img src="@img/products/dfood.png" alt="bear">
+                </div>
+                <div class="item-product__body">
+                  <div class="item-product__name">Dog food</div>
+                  <div class="item-product__price">$30</div>
+                </div>
+                <div class="rating rating__set">
+                  <div class="rating__body">
+                  <div class="rating__active"></div>
+                   <div class="rating__items">
+                <input type="radio" class="rating__item" value="1" name="rating">
+                <input type="radio" class="rating__item" value="2" name="rating">
+                <input type="radio" class="rating__item" value="3" name="rating">
+                <input type="radio" class="rating__item" value="4" name="rating">
+                <input type="radio" class="rating__item" value="5" name="rating">
+                </div>
+                </div>
+                <div class="rating__value">3.6</div>
+                </div>
+              </div>
+              <div class="products__item item-product">
+                <div class="item-product__image ibg">
+                  <img src="@img/products/dbone.png" alt="bear">
+                </div>
+                <div class="item-product__body">
+                  <div class="item-product__name">Treat for dog</div>
+                  <div class="item-product__price">$60</div>
+                </div>
+                <div class="rating rating__set">
+                  <div class="rating__body">
+                  <div class="rating__active"></div>
+                   <div class="rating__items">
+                <input type="radio" class="rating__item" value="1" name="rating">
+                <input type="radio" class="rating__item" value="2" name="rating">
+                <input type="radio" class="rating__item" value="3" name="rating">
+                <input type="radio" class="rating__item" value="4" name="rating">
+                <input type="radio" class="rating__item" value="5" name="rating">
+                </div>
+                </div>
+                <div class="rating__value">3.6</div>
+                </div>
+              </div>
+              <div class="products__item item-product">
+                <div class="item-product__image ibg">
+                  <img src="@img/products/scratch.png" alt="bear">
+                </div>
+                <div class="item-product__body">
+                  <div class="item-product__name">Scratching toy for cat</div>
+                  <div class="item-product__price">$200</div>
+                </div>
+                <div class="rating rating__set">
+                  <div class="rating__body">
+                  <div class="rating__active"></div>
+                   <div class="rating__items">
+                <input type="radio" class="rating__item" value="1" name="rating">
+                <input type="radio" class="rating__item" value="2" name="rating">
+                <input type="radio" class="rating__item" value="3" name="rating">
+                <input type="radio" class="rating__item" value="4" name="rating">
+                <input type="radio" class="rating__item" value="5" name="rating">
+                </div>
+                </div>
+                <div class="rating__value">3.6</div>
+                </div>
+              </div>
+              <div class="products__item item-product">
+                <div class="item-product__image ibg">
+                  <img src="@img/products/bear.png" alt="bear">
+                </div>
+                <div class="item-product__body">
+                  <div class="item-product__name">Teddy bear for dog</div>
+                  <div class="item-product__price">$80</div>
+                </div>
+                <div class="rating rating__set">
+                  <div class="rating__body">
+                  <div class="rating__active"></div>
+                   <div class="rating__items">
+                <input type="radio" class="rating__item" value="1" name="rating">
+                <input type="radio" class="rating__item" value="2" name="rating">
+                <input type="radio" class="rating__item" value="3" name="rating">
+                <input type="radio" class="rating__item" value="4" name="rating">
+                <input type="radio" class="rating__item" value="5" name="rating">
+                </div>
+                </div>
+                <div class="rating__value">3.6</div>
+                </div>
+              </div>
+              <div class="products__item item-product">
+                <div class="item-product__image ibg">
+                  <img src="@img/products/bone.png" alt="bear">
+                </div>
+                <div class="item-product__body">
+                  <div class="item-product__name">Treats Knot Bone</div>
+                  <div class="item-product__price">$8</div>
+                </div>
+                <div class="rating rating__set">
+                  <div class="rating__body">
+                  <div class="rating__active"></div>
+                   <div class="rating__items">
+                <input type="radio" class="rating__item" value="1" name="rating">
+                <input type="radio" class="rating__item" value="2" name="rating">
+                <input type="radio" class="rating__item" value="3" name="rating">
+                <input type="radio" class="rating__item" value="4" name="rating">
+                <input type="radio" class="rating__item" value="5" name="rating">
+                </div>
+                </div>
+                <div class="rating__value">3.6</div>
+                </div>
+              </div>
+              <div class="products__item item-product">
+                <div class="item-product__image ibg">
+                  <img src="@img/products/bowls.png" alt="bear">
+                </div>
+                <div class="item-product__body">
+                  <div class="item-product__name">Dog bowls</div>
+                  <div class="item-product__price">$70</div>
+                </div>
+                <div class="rating rating__set">
+                  <div class="rating__body">
+                  <div class="rating__active"></div>
+                   <div class="rating__items">
+                <input type="radio" class="rating__item" value="1" name="rating">
+                <input type="radio" class="rating__item" value="2" name="rating">
+                <input type="radio" class="rating__item" value="3" name="rating">
+                <input type="radio" class="rating__item" value="4" name="rating">
+                <input type="radio" class="rating__item" value="5" name="rating">
+                </div>
+                </div>
+                <div class="rating__value">3.6</div>
+                </div>
+              </div>
+            </div>
+            <a href="" class="products__button button"><span>Explore</span></a>
+          </div>
+        </section>
+        <section id="services" class="services">
+          <div class="services__container">
+            <div class="services__image">
+              <img src="@img/services/cat.jpg" alt="cat">
+            </div>
+            <div class="services__content content-services">
+              <div class="content-services__block block-header">
+                <div class="block-header__label">Our services</div>
+                <h2 class="block-header__title">Quality Things for Loving Pets</h2>
+                <div class="block-header__text">
+                  <blockquote>“More than a Pet Store…”</blockquote>
+                 <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in tempus elit tristique. Aliquam ultrices sem non.
+                 </p>
+                </div>
+                <a href="" class="block-header__button button"><span>Explore</span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="care">
+          <div class="care__container">
+            <div class="care__content content-care">
+              <div class="content-care__row">
+                <div class="content-care__column content-care__column--small">
+                  <div class="content-care__image">
+                    <img src="@img/services/holding.jpg" alt="pet">
+                  </div>
+                  <a href="" class="content-care__title ">
+                    Taking dogs care to the next level
+                  </a>
+                </div>
+                <div class="content-care__column content-care__column--big">
+                  <div class="content-care__image">
+                    <img src="@img/services/medicine.jpg" alt="pet">
+                  </div>
+                  <a href="" class="content-care__title">
+                    We value the best health of your pets
+                  </a>
+                </div>
+              </div>
+              <div class="content-care__row">
+                <div class="content-care__column content-care__column--big">
+                  <div class="content-care__image">
+                    <img src="@img/services/house.jpg" alt="pet">
+                  </div>
+                  <a href="" class="content-care__title ">
+                    Trust us with your pet’s vacation
+                  </a>
+                </div>
+                <div class="content-care__column content-care__column--small">
+                  <div class="content-care__image">
+                    <img src="@img/services/cattreat.jpg" alt="pet">
+                  </div>
+                  <a href="" class="content-care__title">
+                    We treat cats with utmost care
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
       @@include('html/footer.html',{})
@@ -62,3 +417,4 @@
     <script src="js/app.min.js"></script>
   </body>
 </html>
+

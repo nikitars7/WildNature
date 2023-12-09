@@ -24,10 +24,15 @@ $mobileSmall:479.98px;
 @import './header/header.scss';
 @import './footer/footer.scss';
 @import './blocks/hero/hero.scss';
+@import './blocks//treatment/treatment.scss';
+@import './blocks/products/products.scss';
+@import './blocks//services/services.scss';
+@import './blocks/care/care.scss';
 @import 'common.scss';
 
 
 body{
+   background: #EFE9DD;
    font-family: $fontFamily;
    color:$mainColor;
    @include adaptiv-value('font-size',18,16,1);

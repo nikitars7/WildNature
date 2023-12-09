@@ -40,7 +40,7 @@
          height: 100%;
          top: 0;
          left: 0;
-         color:rgb(226, 204, 9);
+         color:#9D875C;
       }
    }
    &__items{
@@ -57,6 +57,7 @@
       opacity: 0;
    }
    &__value{
+      display:none;
       font-size: 50%;
       line-height: 1;
       padding-left: 10px;

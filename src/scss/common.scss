@@ -1,10 +1,9 @@
 .block-header {
-  display: grid;
-  gap: toRem(20);
   justify-items: start;
   &__label {
     line-height: 156.25%; /* 25/16 */
     text-transform: capitalize;
+    &:not(:last-child){margin-bottom:toRem(20)}
   }
 
   &__title {
@@ -12,10 +11,13 @@
     color: $titlecolor;
     font-size: toRem(48);
     text-transform: capitalize;
+    &:not(:last-child){margin-bottom:toRem(20)}
   }
 
   &__text {
     line-height: 156.25%;
+    font-size: toRem(16);
+    &:not(:last-child){margin-bottom:toRem(20)}
     blockquote {
       font-style: italic;
       &:not(:last-child) {
