@@ -1,83 +1,121 @@
 .care {
-@include adaptiv-value('padding-top',159,50,1);
-position: relative;
-   &::before{
-      content:'';
-      position: absolute;
-      top: 0;
-      left: 0;
+  @include adaptiv-value("padding-top", 159, 50, 1);
+  @include adaptiv-value("padding-bottom", 159, 50, 1);
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.2;
+    height: 100%;
+    background: url("../img/treatment/bg.jpg") center no-repeat;
+    background-size: cover;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    @include adaptiv-value("row-gap", 126, 15, 1);
+  }
+  &__item {
+    &:nth-child(4n + 1) {
+      width: 75.318066%;
+    }
+    &:nth-child(4n) {
+      justify-self: end;
+    }
+  }
+  &__image {
+    display: block;
+    img {
       width: 100%;
-      opacity: 0.2;
-      height: 100%;
-      background: url('../img/treatment/bg.jpg')center no-repeat;
-      background-size: cover;
-   }
-   &__container {
-   }
-
-   &__content {
-   }
-}
-.content-care {
-position: relative;
-   &__row {
-      display: flex;
-      @include adaptiv-value('gap',194,50,1);
-      &:not(:last-child){@include adaptiv-value('margin-bottom',126,50,1);}
-      &:last-child{
-         @include adaptiv-value('padding-bottom',164,50,1);
-      }
-      @media (max-width:$mobile){
-         flex-direction: column;
-      }
-   }
-
-   &__column {
-      display: flex;
-      flex-direction: column;
-      &--small{
-       @media (max-width:$mobile){
-
-       }
-      }
-      &--big{
-
-      }
-   }
-   &__image {
-      img{
-         max-width: 100%;
-      }
-      @media (max-width:$mobile){
-         position: relative;
-         padding-bottom: 70%;
-        img{
-           position: absolute;
-           top: 0;
-           left: 0;
-           width: 100%;
-           height: 100%;
-           object-fit: cover;
+    }
+    &:not(:last-child) {
+      @include adaptiv-value("margin-bottom", 52, 15, 1);
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    font-family: "Italiana";
+    color: $titlecolor;
+    @include adaptiv-value("font-size", 32, 28, 1);
+    &::before {
+      flex-shrink: 0;
+      font-size: 24px;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        span {
+          text-decoration: underline;
         }
       }
-      @include adaptiv-value('margin-bottom',52,15,1);
-   }
-
-   &__title {
-      position: relative;
-      font-family: "Italiana";
-      color:$titlecolor;
-      @include adaptiv-value('font-size',32,24,1);
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      align-items: center;
-      gap:toRem(15);
-      &::before{
-         @extend ._icon-arrow;
-         font-family: 'icons';
-         font-size: 22px;
-         align-self: start;
-      }
-   }
+    }
+  }
 }
+// .content-care {
+// position: relative;
+//    &__row {
+//       display: flex;
+//       @include adaptiv-value('gap',194,50,1);
+//       &:not(:last-child){@include adaptiv-value('margin-bottom',126,50,1);}
+//       &:last-child{
+//          @include adaptiv-value('padding-bottom',164,50,1);
+//       }
+//       @media (max-width:$mobile){
+//          flex-direction: column;
+//       }
+//    }
+
+//    &__column {
+//       display: flex;
+//       flex-direction: column;
+//       &--small{
+//        @media (max-width:$mobile){
+
+//        }
+//       }
+//       &--big{
+
+//       }
+//    }
+//    &__image {
+//       img{
+//          max-width: 100%;
+//       }
+//       @media (max-width:$mobile){
+//          position: relative;
+//          padding-bottom: 70%;
+//         img{
+//            position: absolute;
+//            top: 0;
+//            left: 0;
+//            width: 100%;
+//            height: 100%;
+//            object-fit: cover;
+//         }
+//       }
+//       @include adaptiv-value('margin-bottom',52,15,1);
+//    }
+
+//    &__title {
+//       position: relative;
+//       font-family: "Italiana";
+//       color:$titlecolor;
+//       @include adaptiv-value('font-size',32,24,1);
+//       display: flex;
+//       flex-direction: row-reverse;
+//       justify-content: space-between;
+//       align-items: center;
+//       gap:toRem(15);
+//       &::before{
+//          @extend ._icon-arrow;
+//          font-family: 'icons';
+//          font-size: 22px;
+//          align-self: start;
+//       }
+//    }
+// }

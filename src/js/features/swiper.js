@@ -71,4 +71,25 @@ export const swiper = () => {
     mainSlider.controller.control = miniSwiper; // привязка слайдеров
     miniSwiper.controller.control = mainSlider;
   }
+  const quoteSlider =  new Swiper('.quote-contacts__slider', {
+    modules: [Navigation],
+    observer: true,
+    observeParents: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    slideToClickedSlide:true,
+    // loop:true,
+    // loopAdditionalSlides:10,
+    centeredSlides:true,
+    // autoHeight: true,
+    speed: 800,
+    // pagination: {
+    //   el: '.reviews__bullets',
+    //   clickable: true,
+    // },
+    navigation: {
+      prevEl: '.quote__arrow--left',
+      nextEl: '.quote__arrow--right',
+    },
+  })
 }

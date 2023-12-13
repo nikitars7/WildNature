@@ -13,6 +13,15 @@
     background: url("../img/footer/footer-decor.svg") left bottom / 100%
       no-repeat;
   }
+  // &::before {
+  //   content: "";
+  //   background-color: $hfcolor;
+  //   position: absolute;
+  //   width: 41.510417%; /* 797/1920 */
+  //   top: 0;
+  //   height: 100%;
+  //   left: 0;
+  // }
   &__container {
     @include adaptiv-value("padding-top", 160, 50, 1);
     @include adaptiv-value("padding-bottom", 160, 50, 1);
@@ -42,9 +51,13 @@
     position: relative;
     z-index: 2;
     border: 1px solid #fff;
+    margin:-19px;
     padding: 19px;
     img {
       max-width: 100%;
+    }
+    @media (max-width:$tablet){
+      margin: 0px;
     }
   }
 
