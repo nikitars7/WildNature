@@ -958,7 +958,7 @@ h1, h2, h3, h4, h5, h6 {
   object-position: top;
 }
 
-.slide-hero {
+.slide-hero__content {
   border-radius: 50%;
   border: 0.0625rem solid #C1AB81;
   padding: 24px;
@@ -967,7 +967,7 @@ h1, h2, h3, h4, h5, h6 {
   aspect-ratio: 1/1;
 }
 @media (max-width: 1570px) {
-  .slide-hero {
+  .slide-hero__content {
     padding: calc(10px + 14 * (100vw - 320px) / 1250);
   }
 }
