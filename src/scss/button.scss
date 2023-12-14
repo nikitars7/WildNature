@@ -2,6 +2,8 @@
   position: relative;
   overflow: hidden;
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 300;
   line-height: 156.25%; /* 25/16 */
   background-color: #fff;
@@ -16,7 +18,7 @@
     height: 100%;
     transition: opacity 0.3s ease 0s;
     opacity: 0.5;
-    background: url("../img/button/bg-button.jpg") center no-repeat;
+    background: url("../img/button/bg-button.jpg") center /cover no-repeat;
   }
   span {
     position: relative;

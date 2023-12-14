@@ -207,6 +207,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   overflow: hidden;
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 300;
   line-height: 156.25%; /* 25/16 */
   background-color: #fff;
@@ -222,7 +224,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   transition: opacity 0.3s ease 0s;
   opacity: 0.5;
-  background: url("../img/button/bg-button.jpg") center no-repeat;
+  background: url("../img/button/bg-button.jpg") center/cover no-repeat;
 }
 .button span {
   position: relative;
@@ -355,6 +357,11 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 767.98px) {
   .lock .header__logo path {
     fill: #fff;
+  }
+}
+@media (min-width: 767.98px) {
+  .menu__icon {
+    display: none;
   }
 }
 .menu__list {
@@ -1248,6 +1255,18 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate(-50%, -50%);
   opacity: 0;
   visibility: hidden;
+  transition: opacity 0.3s;
+}
+@media (any-hover: none) {
+  .item-product__add-to-cart {
+    top: auto;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    border-radius: 0;
+  }
 }
 .item-product__image {
   aspect-ratio: 353/351;
@@ -1422,11 +1441,26 @@ h1, h2, h3, h4, h5, h6 {
     row-gap: calc(15px + 111 * (100vw - 320px) / 1250);
   }
 }
-.care__item:nth-child(4n+1) {
-  width: 75.318066%;
+@media (max-width: 991.98px) {
+  .care__container {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
 }
-.care__item:nth-child(4n) {
-  justify-self: end;
+@media (min-width: 991.98px) {
+  .care__item:nth-child(4n+1), .care__item:nth-child(4n) {
+    width: 592px;
+  }
+}
+@media (min-width: 991.98px) and (max-width: 1570px) {
+  .care__item:nth-child(4n+1), .care__item:nth-child(4n) {
+    width: calc(280px + 312 * (100vw - 320px) / 1250);
+  }
+}
+@media (min-width: 991.98px) {
+  .care__item:nth-child(4n) {
+    justify-self: end;
+  }
 }
 .care__image {
   display: block;
@@ -1447,6 +1481,8 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   flex-direction: row-reverse;
   font-family: "Italiana";
+  gap: 10px;
+  line-height: 120%;
   color: #9D875C;
   font-size: 32px;
 }
@@ -1456,6 +1492,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .care__link::before {
+  margin-top: 5px;
   flex-shrink: 0;
   font-size: 24px;
 }

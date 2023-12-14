@@ -61,6 +61,9 @@
 }
 .menu {
   &__icon {
+    @media (min-width:$mobile){
+      display: none;
+    }
   }
 
   &__body {

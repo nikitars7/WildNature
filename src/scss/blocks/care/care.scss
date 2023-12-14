@@ -18,13 +18,22 @@
     grid-template-columns: repeat(2, auto);
     justify-content: space-between;
     @include adaptiv-value("row-gap", 126, 15, 1);
+    @media (max-width: $tablet) {
+      grid-template-columns: auto;
+      justify-content: center;
+    }
   }
   &__item {
-    &:nth-child(4n + 1) {
-      width: 75.318066%;
-    }
-    &:nth-child(4n) {
-      justify-self: end;
+    @media (min-width: $tablet) {
+      &:nth-child(4n + 1),
+      &:nth-child(4n) {
+        // width: 77.862595%; /* 612/786 */
+        @include adaptiv-value("width", 592, 280, 1);
+      }
+      &:nth-child(4n) {
+        // width: 77.862595%; /* 612/786 */
+        justify-self: end;
+      }
     }
   }
   &__image {
@@ -41,9 +50,12 @@
     justify-content: space-between;
     flex-direction: row-reverse;
     font-family: "Italiana";
+    gap: 10px;
+    line-height: 120%;
     color: $titlecolor;
     @include adaptiv-value("font-size", 32, 28, 1);
     &::before {
+      margin-top: 5px;
       flex-shrink: 0;
       font-size: 24px;
     }
