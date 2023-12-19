@@ -518,29 +518,30 @@
         </section>
         <section class="contacts">
           <div class="contacts__container">
-            <div class="contacts__content content-contacts">
-              <div class="content-contacts__images">
-                <div class="content-contacts__image">
-                  <img src="img/contacts/woman.jpg" alt="picture">
-                </div>
-                <div class="content-contacts__image">
-                  <img src="img/contacts/cat.jpg" alt="picture">
-                </div>
-              </div>
-              <div class="content-contacts__block block-header">
+           <div class="contacts__media media-contacts">
+            <div class="media-contacts__images">
+              <img class="media-contacts__image" src="img/contacts/woman.jpg" alt="picture">
+              <img class="media-contacts__image" src="img/contacts/cat.jpg" alt="picture">
+          </div>
+          <a href="#" target="_blank" class="media-contacts__play _icon-play"> <span></span></a>
+           </div>
+              <div class="contacts__block-header block-header">
                 <div class="block-header__label">Contact us</div>
                 <h2 class="block-header__title">Come for the care, leave with a smile</h2>
-                <div class="block-header__text">
-                  <p class="_icon-clock">Monday/Friday 9:00-23:00</p>
-                  <p>Saturday 10:00-21:00</p>
-                  <a href="tel:+0123456789">+012-345-6789</a>
-                  <a href="mailto:TheWildKingdom@contact.com">TheWildKingdom@contact.com</a>
-                  <p class="_icon-location">9889 Lorem Ipsum street, Pellentesque, CA, USA</p>
-                </div>
+                <adress class="block-header__contacts contacts-items">
+                    <ul class="contacts-items__item _icon-clock">
+                      <li>Monday/Friday 9:00-23:00</li>
+                      <li>Saturday 10:00-21:00</li>
+                    </ul>
+                    <ul class="contacts-items__item _icon-location">
+                      <li><a href="tel:+0123456789">+012-345-6789</a></li>
+                      <li>  <a href="mailto:TheWildKingdom@contact.com">TheWildKingdom@contact.com</a></li>
+                      <li>9889 Lorem Ipsum street, Pellentesque, CA, USA</li>
+                    </ul>
+                </adress>
                 <a href="" class="block-header__button button"><span>Contact</span></a>
               </div>
-            </div>
-            <div class="contacts__quote quote-contacts">
+            <!-- <div class="contacts__quote quote-contacts">
               <div class="quote-contacts__slider swiper">
                 <div class="quote-contacts__wrapper swiper-wrapper">
                  <div class="quote-contacts__slide slide-contacts swiper-slide">
@@ -576,7 +577,7 @@
                   <button class="quote__arrow quote__arrow--right _icon-arrow"></button>
               </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
       </main>
