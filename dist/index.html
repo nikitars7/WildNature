@@ -520,10 +520,14 @@
           <div class="contacts__container">
            <div class="contacts__media media-contacts">
             <div class="media-contacts__images">
-              <img class="media-contacts__image" src="img/contacts/woman.jpg" alt="picture">
-              <img class="media-contacts__image" src="img/contacts/cat.jpg" alt="picture">
+              <div class="media-contacts__block-image">
+                <img class="media-contacts__image media-contacts__image--white" src="img/contacts/woman.jpg" alt="picture">
+                <a href="#" target="_blank" class="media-contacts__play _icon-play"><span></span></a>
+              </div>
+              <div class="media-contacts__block-image">
+                <img class="media-contacts__image" src="img/contacts/cat.jpg" alt="picture">
+              </div>
           </div>
-          <a href="#" target="_blank" class="media-contacts__play _icon-play"> <span></span></a>
            </div>
               <div class="contacts__block-header block-header">
                 <div class="block-header__label">Contact us</div>
@@ -541,43 +545,52 @@
                 </adress>
                 <a href="" class="block-header__button button"><span>Contact</span></a>
               </div>
-            <!-- <div class="contacts__quote quote-contacts">
-              <div class="quote-contacts__slider swiper">
-                <div class="quote-contacts__wrapper swiper-wrapper">
-                 <div class="quote-contacts__slide slide-contacts swiper-slide">
-                    <div class="slide-contacts__image">
-                      <img src="img/contacts/quote.svg" alt="quote">
-                    </div>
-                    <div class="slide-contacts__quote">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue. Cras feugiat, diam a placerat posuere, arcu risus porta elit, sed finibus magna lorem ut turpis.
-                    </div>
-                    <div class="slide-contacts__subtitle">Etiam vulputate</div>
-                </div>
-                <div class="quote-contacts__slide slide-contacts swiper-slide">
-                  <div class="slide-contacts__image">
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="reviews__container">
+            <div class="reviews__slider swiper">
+              <div class="reviews__wrapper swiper-wrapper">
+               <div class="reviews__slide slide-reviews swiper-slide">
+                  <div class="slide-reviews__image">
                     <img src="img/contacts/quote.svg" alt="quote">
                   </div>
-                  <div class="slide-contacts__quote">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue. Cras feugiat, diam a placerat posuere, arcu risus porta elit, sed finibus magna lorem ut turpis.
-                  </div>
-                  <div class="slide-contacts__subtitle">Etiam vulputate</div>
+                  <blockquote class="slide-reviews__item item-reviews">
+                    <div class="item-reviews__text">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue. Cras feugiat, diam a placerat posuere, arcu risus porta elit, sed finibus magna lorem ut turpis.</p>
+                    </div>
+                    <cite class="item-reviews__author">Etiam vulputate</cite>
+                  </blockquote>
               </div>
-              <div class="quote-contacts__slide slide-contacts swiper-slide">
-                <div class="slide-contacts__image">
+              <div class="reviews__slide slide-reviews swiper-slide">
+                <div class="slide-reviews__image">
                   <img src="img/contacts/quote.svg" alt="quote">
                 </div>
-                <div class="slide-contacts__quote">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue. Cras feugiat, diam a placerat posuere, arcu risus porta elit, sed finibus magna lorem ut turpis.
-                </div>
-                <div class="slide-contacts__subtitle">Etiam vulputate</div>
+                <blockquote class="slide-reviews__item item-reviews">
+                  <div class="item-reviews__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue. Cras feugiat, diam a placerat posuere, arcu risus porta elit, sed finibus magna lorem ut turpis.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue. Cras feugiat, diam a placerat posuere, arcu risus porta elit, sed finibus magna lorem ut turpis.</p>
+                  </div>
+                  <cite class="item-reviews__author">Etiam vulputate</cite>
+                </blockquote>
             </div>
+            <div class="reviews__slide slide-reviews swiper-slide">
+              <div class="slide-reviews__image">
+                <img src="img/contacts/quote.svg" alt="quote">
               </div>
-              <div class="quote-contacts__controls">
-                  <button class="quote__arrow quote__arrow--left _icon-arrow"></button>
-                  <button class="quote__arrow quote__arrow--right _icon-arrow"></button>
-              </div>
-              </div>
-            </div> -->
+              <blockquote class="slide-reviews__item item-reviews">
+                <div class="item-reviews__text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue. Cras feugiat, diam a placerat posuere, arcu risus porta elit, sed finibus magna lorem ut turpis.</p>
+                </div>
+                <cite class="item-reviews__author">Etiam vulputate</cite>
+              </blockquote>
+          </div>
+            </div>
+            <div class="reviews__controls">
+                <button class="reviews__arrow reviews__arrow--left _icon-arrow"></button>
+                <button class="reviews__arrow reviews__arrow--right _icon-arrow"></button>
+            </div>
+            </div>
           </div>
         </section>
       </main>

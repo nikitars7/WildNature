@@ -1,0 +1,132 @@
+.reviews {
+  @include adaptiv-value("padding-bottom", 160, 50, 1);
+  &__container {
+  }
+  &__slider {
+    position: relative;
+  }
+
+  &__wrapper {
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    @include adaptiv-value("padding-left", 190, 70, 1, 767.98);
+    @include adaptiv-value("padding-right", 190, 70, 1, 767.98);
+    align-items: center;
+    text-align: center;
+    @include adaptiv-value("gap", 50, 20, 1);
+    @media (max-width: $mobile) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__controls {
+  }
+}
+
+.slide-reviews {
+  &__image {
+    width: toRem(140);
+    height: toRem(140);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      background: url("../img/button/bg-button.jpg") center no-repeat;
+    }
+    img {
+      position: relative;
+      max-width: 100%;
+    }
+  }
+
+  &__item {
+  }
+}
+.item-reviews {
+  &__text {
+    position: relative;
+    @include adaptiv-value("font-size", 30, 18, 1);
+    color: $mainColor;
+    line-height: 166.666667%; /* 50/30 */
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+    p {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+    &::before,
+    &::after {
+      content: "\e906";
+      position: absolute;
+      font-family: "icons";
+      color: $titlecolor;
+    }
+    &::before {
+      top: 0;
+      left: 0;
+      transform: translate(0px, -50%);
+    }
+    &::after {
+      bottom: 0;
+      right: 0;
+      transform: rotate(-180deg) translate(0px, -50%);
+    }
+  }
+  &__author {
+    color: $titlecolor;
+    @include adaptiv-value("font-size", 48, 32, 1);
+    text-transform: capitalize;
+    font-family: "Italiana";
+  }
+}
+
+.reviews {
+  &__arrow {
+    &.swiper-button-disabled {
+      cursor: default;
+      pointer-events: none;
+      color: #000;
+      opacity: 0.2;
+    }
+    position: absolute;
+    background-color: transparent;
+    @include adaptiv-value("font-size", 33, 20, 1);
+    color: $titlecolor;
+    top: 235px;
+    transition: color 0.3s;
+    transform: translate(0px, -50%);
+    @media (any-hover: hover) {
+      &:hover {
+        color: #72510f;
+      }
+    }
+    @media (max-width: $mobile) {
+      top: 65px;
+    }
+  }
+
+  &__arrow--left {
+    left: 0;
+    transform: translate(0px, -50%) rotate(-180deg);
+  }
+
+  &__arrow--right {
+    right: 0;
+  }
+}
