@@ -1827,22 +1827,6 @@ h1, h2, h3, h4, h5, h6 {
 .item-reviews__text p:not(:last-child) {
   margin-bottom: 15px;
 }
-.item-reviews__text::before, .item-reviews__text::after {
-  content: "\e906";
-  position: absolute;
-  font-family: "icons";
-  color: #9d875c;
-}
-.item-reviews__text::before {
-  top: 0;
-  left: 0;
-  transform: translate(0px, -50%);
-}
-.item-reviews__text::after {
-  bottom: 0;
-  right: 0;
-  transform: rotate(-180deg) translate(0px, -50%);
-}
 .item-reviews__author {
   color: #9d875c;
   font-size: 48px;
