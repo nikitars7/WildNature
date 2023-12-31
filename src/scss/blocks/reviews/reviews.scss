@@ -70,23 +70,6 @@
         margin-bottom: 15px;
       }
     }
-    &::before,
-    &::after {
-      content: "\e906";
-      position: absolute;
-      font-family: "icons";
-      color: $titlecolor;
-    }
-    &::before {
-      top: 0;
-      left: 0;
-      transform: translate(0px, -50%);
-    }
-    &::after {
-      bottom: 0;
-      right: 0;
-      transform: rotate(-180deg) translate(0px, -50%);
-    }
   }
   &__author {
     color: $titlecolor;
