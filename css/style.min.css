@@ -1249,7 +1249,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .item-product__add-to-cart {
-  -webkit-appearance: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1267,6 +1266,10 @@ h1, h2, h3, h4, h5, h6 {
     visibility: visible;
     width: 100%;
     border-radius: 0;
+  }
+  .item-product__add-to-cart span {
+    -webkit-appearance: none;
+    color: #222220;
   }
 }
 .item-product__image {
